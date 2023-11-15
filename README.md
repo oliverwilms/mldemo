@@ -1,5 +1,5 @@
 # integratedml-demo-template
-This is a template for IntegratedML - InterSystems Github repository.
+This repo is based on a template for IntegratedML - InterSystems Github repository.
 
 This repository comes with a few example Jupyter notebooks (http://jupyter.org) which demonstrate how to use IntegratedML in InterSystems IRIS Community Edition (Advanced Analytics including IntegratedML) in a docker container.
 
