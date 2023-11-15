@@ -10,6 +10,7 @@
  do $system.OBJ.LoadDir("/data","cuk",,1)
 
  // Show how csvgen can load data from csv files locally or remotely
+ do ##class(community.csvgen).Generate("/data/voting_eligibility.csv",",","SQLUser.VotingEligibility")
  do ##class(community.csvgen).Generate("/data/titanic.csv",",","Titanic.Passenger")
  do ##class(community.csvgen).GenerateFromURL("https://raw.githubusercontent.com/datasciencedojo/datasets/master/WorldDBTables/CountryTable.csv",",","SQLUser.Countries")
  do ##class(community.csvgen).Generate("/data/readmission.csv",",","Patient.Readmission")
