@@ -12,6 +12,7 @@ USER irisowner
 
 # copy files
 COPY data /data
+RUN mv /data/voting_eligibility.csv /data/voting-eligibility.csv
 COPY src /data/src
 COPY iris.script /tmp/iris.script
 
