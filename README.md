@@ -69,7 +69,7 @@ $ git clone https://github.com/intersystems-community/integratedml-demo-template
 Open a Docker terminal in this directory and run:
 
 ```
-$ docker-compose build
+docker-compose up --build &> logs.txt
 ```
 
 3. Run the IRIS container, and Jupyter notebook server images:
