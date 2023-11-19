@@ -11,10 +11,10 @@ RUN mkdir /data \
 USER irisowner
 
 # copy files
-COPY data /data
+COPY iris-aa-server/data /data
 RUN mv /data/voting_eligibility.csv /data/voting-eligibility.csv
-COPY src /data/src
-COPY iris.script /tmp/iris.script
+COPY iris-aa-server/src /data/src
+COPY iris-aa-server/iris.script /tmp/iris.script
 
 # special extract treatment for hate-speech dataset
 # RUN mkdir /data/hate-speech/ \
