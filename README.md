@@ -1,7 +1,10 @@
-# integratedml-demo-template
-This repo is based on a template for IntegratedML - InterSystems Github repository.
+# mldemo
+This repository is based on a template for IntegratedML - InterSystems Github repository.
 
 This repository comes with a few example Jupyter notebooks (http://jupyter.org) which demonstrate how to use IntegratedML in InterSystems IRIS Community Edition (Advanced Analytics including IntegratedML) in a docker container.
+
+## Online Demo
+You can find online demo here - [Management Portal](https://mldemo.demo.community.intersystems.com/csp/sys/UtilHome.csp) or [Terminal](https://mldemo.demo.community.intersystems.com/terminal/)
 
 ## Contents
 * [What is IntegratedML?](#what-is-integratedml)
