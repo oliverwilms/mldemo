@@ -127,3 +127,28 @@ Here is an example line to [import countries.csv data from URL](https://github.c
 SELECT * FROM COUNTRIES
 ```
 
+Hi Oliver, 
+
+Here are the SQL Queries I used: 
+
+Data = SELECT * FROM Titanic.Passenger
+
+Create model = CREATE MODEL TitanicModelName PREDICTING (Survived) FROM Titanic.Passenger
+
+Split Training Data = CREATE VIEW TitanicTraining AS SELECT * FROM Titanic.Passenger WHERE ID <= 750
+
+Train Model = TRAIN MODEL TitanicModelName FROM TitanicTraining
+
+Split Testing Data = CREATE VIEW TitanicTesting AS SELECT * FROM Titanic.Passenger WHERE ID > 750
+
+Test/Validate Model = VALIDATE MODEL TitanicModelName FROM VotingValidation 
+
+View Results = SELECT * FROM INFORMATION_SCHEMA.ML_VALIDATION_METRICS 
+
+Make Predictions = SELECT PREDICT(TitanicModelName) AS PredictedSurvived, Survived, * FROM Titanic.Passenger WHERE ID > 750
+
+Probability Query = SELECT PROBABILITY(TitanicModelName) AS ProbabilitySurvived, Survived, * FROM Titanic.Passenger WHERE ID > 800
+
+Best,
+John Paya
+
